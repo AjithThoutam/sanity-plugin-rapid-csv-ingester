@@ -7,10 +7,10 @@ import Homepage from "./Homepage";
 import type { PluginConfig } from "./types";
 
 /**
- * Plugin: Content Automation
+ * Plugin: Rapid CSV Ingester
  * @public
  */
-export const ContentAutomation = definePlugin<PluginConfig | undefined>(config => {
+export const rapidCSVIngester = definePlugin<PluginConfig | undefined>(config => {
 	const pluginConfig = { ...DEFAULT_CONFIG, ...config };
 
 	return {
@@ -20,7 +20,7 @@ export const ContentAutomation = definePlugin<PluginConfig | undefined>(config =
 				...prev,
 				{
 					name: packageID,
-					title: "Content Automation",
+					title: "Rapid CSV Ingester",
 					component: Homepage,
 					options: pluginConfig
 				}
