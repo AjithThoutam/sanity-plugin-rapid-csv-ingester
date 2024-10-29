@@ -1,18 +1,18 @@
 {
-  "name": "sanity-plugin-ihcl-content-automation",
+  "name": "sanity-plugin-rapid-csv-ingester",
   "version": "1.0.0",
   "description": "",
   "keywords": [
     "sanity",
     "sanity-plugin"
   ],
-  "homepage": "https://github.com/AjithThoutam/sanity-plugin-ihcl-content-automation#readme",
+  "homepage": "https://github.com/AjithThoutam/sanity-plugin-rapid-csv-ingester#readme",
   "bugs": {
-    "url": "https://github.com/AjithThoutam/sanity-plugin-ihcl-content-automation/issues"
+    "url": "https://github.com/AjithThoutam/sanity-plugin-rapid-csv-ingester/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/AjithThoutam/sanity-plugin-ihcl-content-automation.git"
+    "url": "git+ssh://git@github.com/AjithThoutam/sanity-plugin-rapid-csv-ingester.git"
   },
   "license": "MIT",
   "author": "AjithThoutam <ajith.t@techouts.com>",

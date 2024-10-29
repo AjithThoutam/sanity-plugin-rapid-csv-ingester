@@ -1,11 +1,11 @@
-# sanity-plugin-ihcl-content-automation
+# sanity-plugin-rapid-csv-ingester
 
 > This is a **Sanity Studio v3** plugin.
 
 ## Installation
 
 ```sh
-npm install sanity-plugin-ihcl-content-automation
+npm install sanity-plugin-rapid-csv-ingester
 ```
 
 ## Usage
@@ -14,7 +14,7 @@ Add it as a plugin in `sanity.config.ts` (or .js):
 
 ```ts
 import {defineConfig} from 'sanity'
-import {myPlugin} from 'sanity-plugin-ihcl-content-automation'
+import {myPlugin} from 'sanity-plugin-rapid-csv-ingester'
 
 export default defineConfig({
   //...
