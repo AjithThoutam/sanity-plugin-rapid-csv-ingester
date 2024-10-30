@@ -6,6 +6,7 @@ import {
 	useRef,
 	useState
 } from "react";
+import toast, { Toaster } from "react-hot-toast";
 
 import { useClient } from "./hooks/useClient";
 import useDocumentInfo from "./hooks/useDocumentInfo";
@@ -69,11 +70,17 @@ export default function Homepage(): ReactElement {
 				};
 
 				client
-				// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-				// @ts-ignore
+					// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+					// @ts-ignore
 					.create(doc)
-					.then(createDocRes => console.log(createDocRes))
-					.catch(err => console.error(err));
+					.then(createDocRes => {
+						console.log(createDocRes);
+						toast.success(`Uploaded ${c.title} document successfully!`);
+					})
+					.catch(err => {
+						console.error(err);
+						toast.error(`Uploading ${c.title} document failed!`);
+					});
 			}
 		};
 
@@ -82,6 +89,7 @@ export default function Homepage(): ReactElement {
 
 	return (
 		<div className='flex flex-col items-center justify-center min-h-screen bg-black'>
+			<Toaster />
 			<div className='bg-white p-6 rounded-lg shadow-lg'>
 				<h1 className='text-2xl font-bold mb-4 text-black'>Upload CSV File</h1>
 				<input

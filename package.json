@@ -46,6 +46,7 @@
   "dependencies": {
     "@sanity/incompatible-plugin": "^1.0.4",
     "papaparse": "^5.4.1",
+    "react-hot-toast": "^2.4.1",
     "uuid": "^10.0.0"
   },
   "devDependencies": {
